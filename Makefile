@@ -2,8 +2,8 @@ CC = clang++
 LINKERS = -lglfw -lGL -lGLEW -ldl
 FLAGS = -Wall
 
-UTL = src/utils/stb_image.cpp src/utils/Error.cpp
-SRC = src/main.cpp 
+UTL = src/utils/stb_image.cpp src/utils/Error.cpp src/utils/myShapes.cpp
+SRC = src/main.cpp
 
 main: $(UTL) $(SRC)
 	$(CC) $(FLAGS) $(SRC) $(UTL) -o build/main $(LINKERS)
